@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Min Max array</title>
+    </head>
+    <body>
+       <header style="text-align: center; font-weight: bold;">Maximum/Minimum Element in Array</header>
+       <aside>
+       <h2>Problem Statement :</h2>
+       <h3>Write a program in any language to find the maximum and minimum element in an array.</h3>
+       </aside>
+       <div class="center" style="background-color: rgba(173,216,230,0.3); float: left;">
+       <section>
+       	Sample Code in C:
+       <pre>
+       <code>
+#include < stdio.h >
+#include < conio.h >
+ 
+ 
+int main()
+{
+    <var>int a[1000],i,n,min,max;</var>
+   
+    printf("Enter size of the array : ");
+    scanf("%d",&n);
+ 
+    printf("Enter elements in array : ");
+    for(i=0; i< n; i++)
+    {
+        scanf(" %d",&a[i]);
+    }
+ 
+    min=max=a[0];
+    for(i=1; i< n; i++)
+    {
+         if(min>a[i])
+		  min=a[i];   
+		   if(max< a[i])
+		    max=a[i];       
+    }
+     printf("minimum of array is : %d",min);
+          printf("\nmaximum of array is : %d",max);
+ 
+ 
+    return 0;
+}
+       </code>
+   </pre>
+       </section>
+   </div>
+   <div class="center" style="width: 20%;margin-right: 30%;">
+   <b>Sample Input : </b><br>
+   <kbd>4 <br>
+    50 12 36 53</kbd>
+   <br><br>
+   <b>Sample Output : </b><br>
+    <samp>minimum of array is : 12<br>
+    maximum of array is : 53</samp><br>
+   <br>
+   <b>variable Used :</b> <br>
+   <var>int a[1000],i,n,min,max</var> are the variable used for these code<br><br>
+   <b>Time Complexity :</b><br>
+   <small> O(n)</small><br><br>
+   <b>Space Complexity :</b><br>
+   <small> O(1)</small><br><br>
+   <b>Reference :</b><br>
+   <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+   </div>
+       <style type="text/css">
+       	.center {
+			  width: 30%;
+			  padding: 10px;
+			  background-color: rgba(173,216,230,0.7);
+			  float: right;
+			}
+       </style>
+    </body>
+</html>
